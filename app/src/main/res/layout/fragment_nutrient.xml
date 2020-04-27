@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:background="@color/cardview_shadow_start_color">
+
+        <Button
+            android:id="@+id/nutrientBack"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvNickname"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="성별은 "
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text=", 연령은 "
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDateofbirth"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="623dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nutrientRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

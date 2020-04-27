@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="my_array">
+    <item>일별</item>
+    <item>주별</item>
+    <item>월별</item>
+</string-array>
+    <string-array name="reminder1">
+        <item>5분</item>
+        <item>10분</item>
+        <item>15분</item>
+        <item>20분</item>
+        <item>30분</item>
+        <item>40분</item>
+        <item>50분</item>
+        <item>1시간</item>
+    </string-array>
+    <string-array name="reminder2">
+        <item>허리</item>
+        <item>목</item>
+        <item>어깨</item>
+    </string-array>
+
+
+
+
+</resources>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9"
+        android:background="@color/cardview_shadow_start_color">
+
+        <Button
+            android:id="@+id/queryBack"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvitem"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="1:1 문의"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnemail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/mail"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관리자에게 메일 보내기"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이콘을 클릭해 주세요."
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</LinearLayout>

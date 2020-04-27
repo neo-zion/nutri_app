@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9"
+        android:background="@color/cardview_shadow_start_color">
+
+        <Button
+            android:id="@+id/sDiaryBack"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="S-Diary"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:id="@+id/barChart" />
+
+
+</LinearLayout>

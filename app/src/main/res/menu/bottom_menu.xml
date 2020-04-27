@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/previous"
+        android:enabled="true"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        android:title="@string/selection_previous" />
+    <item
+        android:id="@+id/refresh"
+        android:enabled="true"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        android:title="@string/selection_refresh" />
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/selection_home" />
+    <item
+        android:id="@+id/video"
+        android:enabled="true"
+        android:icon="@drawable/ic_thumb_up_black_24dp"
+        android:title="@string/selection_streamView" />
+    <item
+        android:id="@+id/notice"
+        android:enabled="true"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="@string/selection_notice" />
+</menu>

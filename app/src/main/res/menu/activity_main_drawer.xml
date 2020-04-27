@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dailyIntake"
+            android:icon="@drawable/ic_local_pharmacy_black_24dp"
+            android:title="@string/menu_dailyIntake" />
+        <item
+            android:id="@+id/nav_stretchReminder"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/menu_stretchReminder" />
+        <item
+            android:id="@+id/nav_sDiary"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="@string/menu_SDiary" />
+        <item
+            android:id="@+id/nav_streamView"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_streamView" />
+
+        <item
+            android:id="@+id/nav_query"
+            android:icon="@drawable/ic_contact_mail_black_24dp"
+            android:title="@string/menu_query" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sub1_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9"
+        android:background="@color/cardview_shadow_start_color">
+
+        <Button
+            android:id="@+id/changePwBack"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvitem"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="비밀번호 변경"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+          >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                >
+                <EditText
+                    android:id="@+id/etOldpw"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="기존 비밀번호"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/etNewPw"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="새로운 비밀번호"
+                    android:inputType="textPassword" />
+                <EditText
+                    android:id="@+id/etNewPwConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="비밀번호 확인"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/changePwConfirm"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radius"
+            android:textSize="23sp"
+            android:text="확인"/>
+    </ScrollView>
+
+
+</LinearLayout>

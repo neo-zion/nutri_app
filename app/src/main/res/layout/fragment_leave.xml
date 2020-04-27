@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sub1_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9"
+        android:background="@color/cardview_shadow_start_color">
+
+        <Button
+            android:id="@+id/leaveBack"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="회원 탈퇴"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+          >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                >
+                <EditText
+                    android:id="@+id/etPasswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="비밀번호를 입력하세요"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="탈퇴를 원하시면 아래 동의버튼을 체크하세요."
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"/>
+                <CheckBox
+                    android:id="@+id/leaveCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/etNickName"
+                    android:layout_alignLeft="@id/etNickName"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:ems="15"
+                    android:text="동의"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/leaveConfirm"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/radius"
+            android:textSize="23sp"
+            android:text="탈퇴"/>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/join2"
+    >
+    <Button
+        android:id="@+id/btnBack2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입2/2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/btnBack2"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="180dp"
+        >
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/female"
+            android:textColor="#FFFFFF"
+            android:text="1"
+            />
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/male"
+            android:textColor="#FFFFFF"
+            android:text="0"
+            />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGender"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="여 성"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGender"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="남 성"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="출 생 연 도"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dateOfBirth"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioGender"
+        android:layout_marginTop="130dp"
+        android:ems="15"
+        android:maxLines="1"
+        android:gravity="center"
+        android:maxLength="4"
+        android:clickable="true"
+        android:focusable="false"
+        android:imeOptions="actionDone"
+        android:hint=" 예)1990"/>
+
+    <Button
+        android:id="@+id/btnJoinOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:text="완 료" />
+
+
+</RelativeLayout>

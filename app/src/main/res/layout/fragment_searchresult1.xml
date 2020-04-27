@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+    android:id="@+id/tvSearch1"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#3F51B5"
+    android:gravity="center"
+    android:text="검색 결과"
+    android:textColor="#fff"
+    android:textSize="15dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="623dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

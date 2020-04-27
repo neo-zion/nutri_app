@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainActivity"
+    android:background="#FFFFFF"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="316dp"
+        android:layout_height="268dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="79dp"
+        app:srcCompat="@drawable/main" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="167dp"
+        android:background="@drawable/btnradius"
+        android:text="이메일로 로그인"        />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp"
+        android:background="#00ff0000"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textIsSelectable="false" />
+
+
+</RelativeLayout>

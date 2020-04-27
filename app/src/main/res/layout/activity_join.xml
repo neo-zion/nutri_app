@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입2/1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/btnBack"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:text="기본정보를 입력해 주세요"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="50dp"
+        android:ems="15"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:hint=" 이 메 일"/>
+
+    <Button
+        android:id="@+id/emailChecked"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPasswd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-117dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:text="중복체크" />
+
+    <EditText
+        android:id="@+id/etPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:hint=" 비 밀 번 호"/>
+
+    <EditText
+        android:id="@+id/etNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etPasswd"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:imeOptions="actionDone"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="닉네임"/>
+
+    <Button
+        android:id="@+id/nickChecked"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPasswd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="중복체크" />
+
+    <CheckBox
+        android:id="@+id/allTermsCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etNickName"
+        android:layout_alignLeft="@id/etNickName"
+        android:layout_marginTop="23dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:ems="15"
+        android:text="전체동의"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/allTermsCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text=" 회원 이용 약관                                                    >  "
+        android:background="#00ff0000"
+        />
+
+    <Button
+        android:id="@+id/PrivacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/terms"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#00ff0000"
+        android:text="개인정보 수집 이용                                             >  " />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/PrivacyPolicy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#00ff0000"
+        android:text=" 만 14세이상확인                                                      " />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnJoinNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="20sp"
+        android:text="다 음" />
+
+
+</RelativeLayout>
